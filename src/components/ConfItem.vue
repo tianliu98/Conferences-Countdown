@@ -21,14 +21,14 @@
 <script>
 export default {
     name: 'ConfItem',
-    props: ['name', 'deadline', 'location', 'url'],
+    props: ['name', 'deadline', 'location', 'url', 'is_expired'],
     data() {
         return {
             DD: 0,
             HH: 0,
             MM: 0,
             SS: 0,
-            is_expired: false,
+            is_expired_local:false
         }
     },
     mounted() {
@@ -44,8 +44,8 @@ export default {
             this.HH = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             this.MM = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             this.SS = Math.floor((distance % (1000 * 60)) / 1000);
-            if (distance < 0){
-                this.is_expired = true
+            if (distance < 0 && !this.is_expired){
+                this.is_expired_local = true
                 location.reload()
             }
         }

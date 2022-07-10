@@ -1,9 +1,9 @@
 {
     "confs": [
-        {"id": 0, "name":"CONF-AA", "url":"https://www.baidu.com", "deadline": "Jul 8, 2022 17:53:25", "location": "XXXX, XX, XX", "is_expired": false},
-        {"id": 1, "name":"CONF-BB", "url":"https://www.baidu.com", "deadline": "Jan 5, 2024 15:37:25", "location": "XXXX, XX, XX", "is_expired": false},
-        {"id": 2, "name":"CONF-CC", "url":"https://www.baidu.com", "deadline": "Jan 5, 2023 15:37:25", "location": "XXXX, XX, XX", "is_expired": false},
-        {"id": 3, "name":"CONF-DD", "url":"https://www.baidu.com", "deadline": "Jan 5, 2024 15:37:25", "location": "XXXX, XX, XX", "is_expired": false},
-        {"id": 4, "name":"CONF-EE", "url":"https://www.baidu.com", "deadline": "Jan 5, 2021 15:37:25", "location": "XXXX, XX, XX", "is_expired": false}
+        {"name":"CONF-AA", "url":"https://www.baidu.com", "deadline": "Jul 8, 2022 17:53:25", "location": "XXXX, XX, XX", "is_expired": false},
+        {"name":"CONF-BB", "url":"https://www.baidu.com", "deadline": "Jan 5, 2024 15:37:25", "location": "XXXX, XX, XX", "is_expired": false},
+        {"name":"CONF-CC", "url":"https://www.baidu.com", "deadline": "Jan 5, 2023 15:37:25", "location": "XXXX, XX, XX", "is_expired": false},
+        {"name":"CONF-DD", "url":"https://www.baidu.com", "deadline": "Jan 5, 2024 15:37:25", "location": "XXXX, XX, XX", "is_expired": false},
+        {"name":"CONF-EE", "url":"https://www.baidu.com", "deadline": "Jan 5, 2021 15:37:25", "location": "XXXX, XX, XX", "is_expired": false}
     ]
 }

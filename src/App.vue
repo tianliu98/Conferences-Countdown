@@ -14,6 +14,7 @@
           :deadline="data.deadline"
           :location="data.location"
           :url="data.url"
+          :is_expired=false
         />
       </div>
 
@@ -24,12 +25,13 @@
       <div class="ui divider"></div>
 
       <div id="past_conf" v-for="data in myData" :key="data.name + 'past'">
-        <PastConf 
+        <ConfItem 
           v-if="(new Date(data.deadline).getTime() - new Date().getTime() < 0)"
           :name="data.name"
           :deadline="data.deadline"
           :location="data.location"
           :url="data.url"
+          :is_expired=true
         />
       </div>
 
@@ -42,7 +44,6 @@
 <script>
 import NavBar from './components/Navbar.vue'
 import ConfItem from "./components/ConfItem.vue"
-import PastConf from "./components/PastConf.vue"
 import json from './data/data.json'
 
 export default {
@@ -50,7 +51,6 @@ export default {
   components: {
     NavBar,
     ConfItem,
-    PastConf
   },
   data(){
     return{
