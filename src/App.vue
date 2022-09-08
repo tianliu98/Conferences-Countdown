@@ -5,7 +5,9 @@
 
     <div id="contents">
       <h1 style="">Conference Deadlines</h1>
-      <p>Countdowns to top __ __ __ conference deadlines.</p>
+      <p>Contact the manager to add upcoming deadlines. Please use the following format.</p>
+      <br>
+      <p>{"name":"CONF-AA", "url":"https://www.google.com", "deadline": "Jul 22, 2022 15:37:25", "location": "XXXX, XX, XX"}</p>
 
       <div id="incoming_conf" v-for="data in myData" :key="data.name">
         <ConfItem 

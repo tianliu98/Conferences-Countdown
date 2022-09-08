@@ -9,7 +9,8 @@
             <div id="item-col">
                 <h2 v-if="is_expired == false">{{DD}}days {{HH}}h {{MM}}m {{SS}}s</h2>
                 <h2 v-else>Past Due</h2>
-                <p>Deadline: {{ deadline }}</p>
+                <p>Deadline_local: {{local_time}}</p>
+                <p>Deadline_origin: {{ deadline }}</p>
             </div>
         </div>
         
@@ -19,6 +20,8 @@
 
 
 <script>
+import moment from 'moment'
+
 export default {
     name: 'ConfItem',
     props: ['name', 'deadline', 'location', 'url', 'is_expired'],
@@ -28,7 +31,8 @@ export default {
             HH: 0,
             MM: 0,
             SS: 0,
-            is_expired_local:false
+            is_expired_local:false,
+            local_time: ''
         }
     },
     mounted() {
@@ -37,9 +41,12 @@ export default {
     },
     methods: {
         countdown: function(){
-            var countDownDate = new Date(this.deadline).getTime()
+            var countDownDate = new Date(this.deadline)
+            var countDownDate_time = countDownDate.getTime()
+            // this.local_time = countDownDate.toString()
+            this.local_time = moment(countDownDate).format("ddd MMM DD YYYY h:mm:ss zz")
             var now = new Date().getTime();
-            var distance = countDownDate - now;
+            var distance = countDownDate_time - now;
             this.DD = Math.floor(distance / (1000 * 60 * 60 * 24));
             this.HH = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             this.MM = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
