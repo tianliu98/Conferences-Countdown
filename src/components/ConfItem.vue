@@ -45,7 +45,7 @@ export default {
             var countDownDate = new Date(this.deadline)
             var countDownDate_time = countDownDate.getTime()
             // this.local_time = countDownDate.toString()
-            this.local_time = moment(countDownDate).format("ddd MMM DD YYYY h:mm:ss zz")
+            this.local_time = moment(countDownDate).format("ddd MMM DD YYYY H:mm:ss zz")
             var now = new Date().getTime();
             var distance = countDownDate_time - now;
             this.DD = Math.floor(distance / (1000 * 60 * 60 * 24));
