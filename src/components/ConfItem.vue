@@ -10,7 +10,7 @@
                 <h2 v-if="is_expired == false">{{DD}}days {{HH}}h {{MM}}m {{SS}}s</h2>
                 <h2 v-else>Past Due</h2>
                 <p>Deadline_local: {{local_time}}</p>
-                <p>Deadline_MN_time: {{ deadline }}</p>
+                <p>Deadline_origin: {{ deadline }}</p>
             </div>
         </div>
         
@@ -41,8 +41,8 @@ export default {
     },
     methods: {
         countdown: function(){
-            var countDownDate = new Date(this.deadline.concat(" ", "GMT-5"))
-            // var countDownDate = new Date(this.deadline)
+            // var countDownDate = new Date(this.deadline.concat(" ", "GMT-5"))
+            var countDownDate = new Date(this.deadline)
             var countDownDate_time = countDownDate.getTime()
             // this.local_time = countDownDate.toString()
             this.local_time = moment(countDownDate).format("ddd MMM DD YYYY h:mm:ss zz")

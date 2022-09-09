@@ -1,15 +1,15 @@
 {
     "confs": [
-        {"name":"CONF-AA", "url":"https://www.google.com", "deadline": "Jul 09, 2022 00:00:00", "location": "Minneapolis, Minnesota, US", "is_expired": false},
-        {"name":"INFOCOM 2023", "url":"https://infocom2022.ieee-infocom.org/", "deadline": "Aug 1, 2022 23:00:00", "location": "New York, USA", "is_expired": false},
-        {"name":"AAAI 2023", "url":"https://aaai.org/Conferences/AAAI-23/", "deadline": "Aug 16, 2022 07:00:00", "location": "Washington, DC, USA", "is_expired": false},
-        {"name":"LoG 2023", "url":"https://logconference.org/", "deadline": "Sep 17, 2022 07:00:00", "location": "Virtual, free to attend", "is_expired": false},
-        {"name":"PAM TBD", "url":"https://pam2022.nl/", "deadline": "Oct 30, 2022 00:00:00", "location": "XXXX, XX", "is_expired": false},
-        {"name":"ICC 2023", "url":"https://icc2023.ieee-icc.org/", "deadline": "Oct 11, 2022 07:00:00", "location": "Rome, RM, Italy", "is_expired": false},
-        {"name":"WoWMoM TBD", "url":"https://computing.ulster.ac.uk/WoWMoM2022/index.html", "deadline": "Dec 30, 2022 00:00:00", "location": "XXXX, XX", "is_expired": false},
-        {"name":"WWW 2023", "url":"https://www2023.thewebconf.org/", "deadline": "Oct 14, 2022 07:00:00", "location": "Austin, Texas, USA", "is_expired": false},
-        {"name":"CoNEXT-GNNet 2023", "url":"https://bnn.upc.edu/workshops/gnnet2022/", "deadline": "Sep 17, 2022 07:00:00", "location": "Rome, Italy", "is_expired": false},
-        {"name":"ICLR 2023", "url":"https://iclr.cc/Conferences/2023/CallForPapers", "deadline": "Sep 29, 2022 07:00:00", "location": "Kigali, Rwanda", "is_expired": false},
-        {"name":"SDM 2023", "url":"https://www.siam.org/conferences/cm/conference/sdm23", "deadline": "Oct 8, 2022 02:00:00", "location": "Minneapolis, Minnesota, USA", "is_expired": false}
+        {"name":"CONF-AA", "url":"https://www.google.com", "deadline": "Jul 09, 2022 00:00:00 GMT-5", "location": "Minneapolis, Minnesota, US", "is_expired": false},
+        {"name":"INFOCOM 2023", "url":"https://infocom2022.ieee-infocom.org/", "deadline": "Aug 1, 2022 23:00:00 GMT-5", "location": "New York, USA", "is_expired": false},
+        {"name":"AAAI 2023", "url":"https://aaai.org/Conferences/AAAI-23/", "deadline": "Aug 16, 2022 07:00:00 GMT-5", "location": "Washington, DC, USA", "is_expired": false},
+        {"name":"LoG 2023", "url":"https://logconference.org/", "deadline": "Sep 17, 2022 07:00:00 GMT-5", "location": "Virtual, free to attend", "is_expired": false},
+        {"name":"PAM TBD", "url":"https://pam2022.nl/", "deadline": "Oct 30, 2022 00:00:00 GMT-5", "location": "XXXX, XX", "is_expired": false},
+        {"name":"ICC 2023", "url":"https://icc2023.ieee-icc.org/", "deadline": "Oct 11, 2022 07:00:00 GMT-5", "location": "Rome, RM, Italy", "is_expired": false},
+        {"name":"WoWMoM TBD", "url":"https://computing.ulster.ac.uk/WoWMoM2022/index.html", "deadline": "Dec 30, 2022 00:00:00 GMT-5", "location": "XXXX, XX", "is_expired": false},
+        {"name":"WWW 2023", "url":"https://www2023.thewebconf.org/", "deadline": "Oct 14, 2022 07:00:00 GMT-5", "location": "Austin, Texas, USA", "is_expired": false},
+        {"name":"CoNEXT-GNNet 2023", "url":"https://bnn.upc.edu/workshops/gnnet2022/", "deadline": "Sep 17, 2022 07:00:00 GMT-5", "location": "Rome, Italy", "is_expired": false},
+        {"name":"ICLR 2023", "url":"https://iclr.cc/Conferences/2023/CallForPapers", "deadline": "Sep 29, 2022 07:00:00 GMT-5", "location": "Kigali, Rwanda", "is_expired": false},
+        {"name":"SDM 2023", "url":"https://www.siam.org/conferences/cm/conference/sdm23", "deadline": "Oct 8, 2022 02:00:00 GMT-5", "location": "Minneapolis, Minnesota, USA", "is_expired": false}
     ]
 }
